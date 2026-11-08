@@ -1,0 +1,89 @@
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DesignMarket - Marketplace jasa desain kreatif">
+    <title>{{ app_name }} | Marketplace Jasa Desain</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container nav-content">
+            <a href="/" class="logo">Design<span>Market</span></a>
+            <nav>
+                <a href="#beranda">Beranda</a>
+                <a href="#layanan">Jasa Desain</a>
+                <a href="#tentang">Tentang</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="beranda">
+            <div class="container">
+                <span class="tagline">Marketplace Jasa Desain Kreatif</span>
+                <h1>Temukan Desainer Terbaik untuk Ide Kreatifmu</h1>
+                <p>
+                    DesignMarket mempertemukan pelanggan dengan
+                    desainer kreatif yang menawarkan berbagai
+                    layanan desain sesuai kebutuhan.
+                </p>
+                <a href="#layanan" class="btn-primary">
+                    Jelajahi Layanan
+                </a>
+            </div>
+        </section>
+
+        <section class="services container" id="layanan">
+            <div class="section-heading">
+                <h2>Jelajahi Jasa Desain</h2>
+                <p>Pilihan layanan kreatif dari desainer kami.</p>
+                <small>Data layanan berikut merupakan contoh untuk demonstrasi M03.</small>
+            </div>
+
+            <div class="service-grid">
+                {% for item in layanan %}
+                <article class="service-card">
+                    <div class="service-icon">✦</div>
+                    <span class="category">{{ item.kategori }}</span>
+                    <h3>{{ item.nama }}</h3>
+                    <p>Ditawarkan oleh {{ item.desainer }}</p>
+                    <div class="card-footer">
+                        <div>
+                            <small>Harga mulai</small>
+                            <strong>Rp {{ "{:,.0f}".format(item.harga).replace(",", ".") }}</strong>
+                        </div>
+                        <span class="demo-label">Demo</span>
+                    </div>
+                </article>
+                {% endfor %}
+            </div>
+        </section>
+
+        <section class="about" id="tentang">
+            <div class="container">
+                <h2>Tentang DesignMarket</h2>
+                <p>
+                    DesignMarket adalah proyek marketplace jasa desain
+                    berbasis Cloud Computing yang dikembangkan untuk
+                    menghubungkan desainer dan calon pelanggan.
+                </p>
+                <p>
+                    Versi M03 berfokus pada prototipe aplikasi,
+                    dokumentasi arsitektur, dan deployment awal
+                    menggunakan VPS Ubuntu Server.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 DesignMarket. Proyek Cloud Computing PTI.</p>
+            <p>Versi prototipe M03 — Belum melayani transaksi nyata.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
