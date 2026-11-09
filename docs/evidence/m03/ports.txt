@@ -1,0 +1,13 @@
+Netid State  Recv-Q Send-Q   Local Address:Port Peer Address:PortProcess
+udp   UNCONN 0      0            127.0.0.1:323       0.0.0.0:*    users:(("chronyd",pid=1009,fd=6))
+udp   UNCONN 0      0           127.0.0.54:53        0.0.0.0:*    users:(("systemd-resolve",pid=7176,fd=16))
+udp   UNCONN 0      0        127.0.0.53%lo:53        0.0.0.0:*    users:(("systemd-resolve",pid=7176,fd=14))
+udp   UNCONN 0      0      172.16.0.4%eth0:68        0.0.0.0:*    users:(("systemd-network",pid=7171,fd=22))
+udp   UNCONN 0      0                [::1]:323          [::]:*    users:(("chronyd",pid=1009,fd=7))
+tcp   LISTEN 0      4096        127.0.0.54:53        0.0.0.0:*    users:(("systemd-resolve",pid=7176,fd=17))
+tcp   LISTEN 0      4096     127.0.0.53%lo:53        0.0.0.0:*    users:(("systemd-resolve",pid=7176,fd=15))
+tcp   LISTEN 0      2048         127.0.0.1:8000      0.0.0.0:*    users:(("gunicorn",pid=10609,fd=5),("gunicorn",pid=10608,fd=5),("gunicorn",pid=10607,fd=5))
+tcp   LISTEN 0      4096           0.0.0.0:22        0.0.0.0:*    users:(("sshd",pid=7193,fd=3),("systemd",pid=1,fd=87))
+tcp   LISTEN 0      4096         127.0.0.1:2019      0.0.0.0:*    users:(("caddy",pid=10092,fd=8))
+tcp   LISTEN 0      4096                 *:80              *:*    users:(("caddy",pid=10092,fd=3))
+tcp   LISTEN 0      4096              [::]:22           [::]:*    users:(("sshd",pid=7193,fd=4),("systemd",pid=1,fd=88))

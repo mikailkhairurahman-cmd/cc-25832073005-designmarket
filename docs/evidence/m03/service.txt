@@ -1,0 +1,18 @@
+● designmarket.service - DesignMarket Flask Application
+     Loaded: loaded (/etc/systemd/system/designmarket.service; enabled; preset: enabled)
+     Active: active (running) since Mon 2026-11-09 17:31:21 WIB; 4min 16s ago
+   Main PID: 10607 (gunicorn)
+      Tasks: 3 (limit: 472)
+     Memory: 42.3M (peak: 42.8M)
+        CPU: 317ms
+     CGroup: /system.slice/designmarket.service
+             ├─10607 /srv/cc-m03/.venv/bin/python /srv/cc-m03/.venv/bin/gunicorn --workers 2 --bind 127.0.0.1:8000 app:app
+             ├─10608 /srv/cc-m03/.venv/bin/python /srv/cc-m03/.venv/bin/gunicorn --workers 2 --bind 127.0.0.1:8000 app:app
+             └─10609 /srv/cc-m03/.venv/bin/python /srv/cc-m03/.venv/bin/gunicorn --workers 2 --bind 127.0.0.1:8000 app:app
+
+Nov 09 17:31:21 vm-designmarket-m03 systemd[1]: Started designmarket.service - DesignMarket Flask Application.
+Nov 09 17:31:21 vm-designmarket-m03 gunicorn[10607]: [2026-11-09 17:31:21 +0700] [10607] [INFO] Starting gunicorn 23.0.0
+Nov 09 17:31:21 vm-designmarket-m03 gunicorn[10607]: [2026-11-09 17:31:21 +0700] [10607] [INFO] Listening at: http://127.0.0.1:8000 (10607)
+Nov 09 17:31:21 vm-designmarket-m03 gunicorn[10607]: [2026-11-09 17:31:21 +0700] [10607] [INFO] Using worker: sync
+Nov 09 17:31:21 vm-designmarket-m03 gunicorn[10608]: [2026-11-09 17:31:21 +0700] [10608] [INFO] Booting worker with pid: 10608
+Nov 09 17:31:21 vm-designmarket-m03 gunicorn[10609]: [2026-11-09 17:31:21 +0700] [10609] [INFO] Booting worker with pid: 10609

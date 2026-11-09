@@ -1,0 +1,18 @@
+ Static hostname: vm-designmarket-m03
+       Icon name: computer-vm
+         Chassis: vm 🖴
+  Virtualization: microsoft
+Operating System: Ubuntu 24.04.5 LTS
+          Kernel: Linux 7.0.0-1017-azure
+    Architecture: x86-64
+ Hardware Vendor: Microsoft Corporation
+  Hardware Model: Virtual Machine
+Firmware Version: Hyper-V UEFI Release v4.1
+   Firmware Date: Wed 2026-04-22
+    Firmware Age: 6month 2w 4d
+               total        used        free      shared  buff/cache   available
+Mem:           836Mi       317Mi        85Mi       4.0Mi       459Mi       519Mi
+Swap:             0B          0B          0B
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        29G  2.6G   26G  10% /
+2
